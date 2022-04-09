@@ -3,3 +3,6 @@ node_modules/
 
 #vscode
 .vscode
+
+# dist - Not pretty sure if this folder should be excluded
+dist
