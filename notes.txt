@@ -1,3 +1,4 @@
+### CLASE 8 - Package Lock y el uso de los simbolos ^ y ~ ###
 # Versionado Semántico (Semantic Versioning)
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -10,3 +11,11 @@ Additional labels for pre-release and build metadata are available as extensions
 Example. 1.0.0
 
 > 1.0.1 { Si se hizo un fix, patch o cambio menor }
+
+^ = Si mantenemos el caret dentro de la configuración de nuestro package estamos garantizando que cuando realicemos una actualización o tengamos un cambio que podamos realizar, vamos a hacer actualización de los cambios menores y de los parches o bug fixes.
+Para quedarnos en una sola versión eliminamos el caret.
+
+~ = Establece que vamos a recibir actualizaciones o cambios solamente de los cambios que son parches o bug fixes.
+
+Package-lock.json
+A partir de la versión 5 npm encontramos este archivo que nos permite tener ciertas configuraciones la cual nos permite saber que esta sucediendo a lo largo de nuestro proyecto sabiendo que versiones, que paquetes y que dependencias se encuentran en este, permitiendonos tener un versionado uno poco mas establecido, podremos compartir este documento con los demás desarrolladores y garantizar que las versiones que se están instalando sean las correctas, al igual nos sirve para cuando los proyectos estén en la nube y nuestro servidor instale de manera automática todas estas dependencias
