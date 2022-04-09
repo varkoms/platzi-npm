@@ -19,3 +19,20 @@ Para quedarnos en una sola versión eliminamos el caret.
 
 Package-lock.json
 A partir de la versión 5 npm encontramos este archivo que nos permite tener ciertas configuraciones la cual nos permite saber que esta sucediendo a lo largo de nuestro proyecto sabiendo que versiones, que paquetes y que dependencias se encuentran en este, permitiendonos tener un versionado uno poco mas establecido, podremos compartir este documento con los demás desarrolladores y garantizar que las versiones que se están instalando sean las correctas, al igual nos sirve para cuando los proyectos estén en la nube y nuestro servidor instale de manera automática todas estas dependencias
+
+### CLASE 9 - Ejecutar Tareas ###
+
+Los scripts NPM: Son comandos que podemos establecer para poder ejecutar desde la consola. Estos nos van a dar una serie de salidas según sea el caso.
+
+Podemos crear la cantidad de scripts que necesitemos. Estos scripts van a poder correr de forma nativa dentro de nuestra terminal.
+
+Ejemplos:
+
+"scripts": {
+    "hola": "node",
+    "build": "webpack --mode production",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "deploy": "npm run format && npm run build"
+  },
+
+Nota: Para poder ejecutar los scripts correctamente, es necesario contar con webpack-cli y prettier instalados, ya sea como una dependencia de desarrollo o como gustes.

@@ -4,7 +4,10 @@
   "description": "Construyendo un package de prueba de NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "hola": "node",
+    "build": "webpack --mode production",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "deploy": "npm run format && npm run build"
   },
   "keywords": [
     "javascript",
@@ -18,7 +21,9 @@
   },
   "devDependencies": {
     "date-fns": "^2.28.0",
+    "eslint": "^8.12.0",
+    "prettier": "^2.6.2",
     "webpack": "^5.72.0",
-    "eslint": "^8.12.0"
+    "webpack-cli": "^4.9.2"
   }
 }
