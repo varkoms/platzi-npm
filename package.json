@@ -17,6 +17,7 @@
   "author": "Cesar Mendoza <cesar.soberanis@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "jest": "^27.5.1",
     "moment": "^2.29.2"
   },
   "devDependencies": {
